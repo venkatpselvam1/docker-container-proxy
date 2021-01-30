@@ -18,6 +18,16 @@ services:
       - app-network
     environment:
       - server_host=http://server:80
+  #     - http_proxy=mitmproxy:8080
+
+  # mitmproxy:
+  #   image: mitmproxy/mitmproxy
+  #   container_name: mitmproxy
+  #   entrypoint: "mitmweb --web-host 0.0.0.0"
+  #   networks:
+  #     - app-network
+  #   ports:
+  #     - '8083:8081'
 
 networks:
   app-network:
