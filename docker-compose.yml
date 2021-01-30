@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  server:
+    image: tutum/hello-world
+    container_name: server
+    networks:
+      - app-network
+    ports:
+      - '8080:80'
+
+  client:
+    build:
+      context: .
+      dockerfile: ./ConsumerApp/Dockerfile
+    container_name: client
+    networks:
+      - app-network
+    environment:
+      - server_host=http://server:80
+
+networks:
+  app-network:
