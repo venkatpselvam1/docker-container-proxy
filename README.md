@@ -12,6 +12,7 @@ This repo has [docker-compose.yml](https://github.com/venkatpselvam1/docker-cont
 
 ## What is out goal?
 We want to add a proxy on the client container so we can monitor the out going traffic from this container.
+![Setting proxy](https://github.com/venkatpselvam1/docker-container-proxy/blob/master/Proxy_between_containers.PNG?raw=true)
 ![Setting proxy](https://github.com/venkatpselvam1/docker-container-proxy/blob/master/Result.PNG?raw=true)
 
 ## Changes Needed
